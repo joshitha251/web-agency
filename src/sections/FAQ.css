@@ -1,0 +1,121 @@
+.faq {
+  background: linear-gradient(180deg, rgba(0, 255, 136, 0.02), transparent);
+  position: relative;
+}
+
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  margin-bottom: var(--spacing-md);
+}
+
+.accordion-item {
+  background: rgba(13, 13, 13, 0.6);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: all var(--transition-normal);
+  backdrop-filter: blur(10px);
+}
+
+.accordion-item.active {
+  border-color: var(--color-primary-green);
+  background: rgba(13, 13, 13, 0.8);
+  box-shadow: 0 12px 32px rgba(0, 255, 136, 0.1);
+}
+
+.accordion-header {
+  width: 100%;
+  padding: var(--spacing-lg);
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--spacing-lg);
+  transition: all var(--transition-fast);
+  text-align: left;
+}
+
+.accordion-header:hover {
+  color: var(--color-primary-green);
+}
+
+.accordion-item.active .accordion-header {
+  color: var(--color-primary-green);
+}
+
+.question-text {
+  font-size: var(--font-size-large);
+  font-weight: 600;
+  color: inherit;
+}
+
+.accordion-icon {
+  flex-shrink: 0;
+  color: var(--color-primary-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.accordion-content {
+  padding: 0 var(--spacing-lg) var(--spacing-lg);
+  border-top: 1px solid var(--border-color);
+}
+
+.accordion-content p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+/* Depth */
+.accordion-item {
+  box-shadow: 
+    0 2px 8px rgba(0, 0, 0, 0.2),
+    0 0 15px rgba(0, 255, 136, 0.05);
+}
+
+.accordion-item.active {
+  box-shadow: 
+    0 8px 24px rgba(0, 255, 136, 0.15),
+    0 0 30px rgba(0, 255, 136, 0.1);
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .accordion-item {
+    transition: none;
+  }
+
+  .accordion-header {
+    transition: none;
+  }
+
+  .accordion-icon {
+    transition: none;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .faq-list {
+    max-width: 100%;
+  }
+
+  .accordion-header {
+    padding: var(--spacing-md);
+  }
+
+  .accordion-content {
+    padding: 0 var(--spacing-md) var(--spacing-md);
+  }
+
+  .question-text {
+    font-size: var(--font-size-large);
+  }
+}

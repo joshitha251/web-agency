@@ -1,0 +1,240 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px var(--spacing-lg) var(--spacing-3xl);
+  overflow: hidden;
+}
+
+.hero-background {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-glow-1,
+.hero-glow-2 {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 255, 136, 0.1) 0%, transparent 70%);
+  filter: blur(80px);
+}
+
+.hero-glow-1 {
+  top: 10%;
+  right: 10%;
+}
+
+.hero-glow-2 {
+  bottom: 10%;
+  left: 5%;
+}
+
+.hero-container {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-3xl);
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: var(--spacing-lg);
+  letter-spacing: -0.02em;
+}
+
+.hero-subtitle {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-2xl);
+  line-height: 1.8;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: var(--spacing-md) var(--spacing-xl);
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: var(--font-size-large);
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary {
+  background: var(--color-primary-green);
+  color: var(--bg-primary);
+}
+
+.btn-primary:hover {
+  background: var(--color-secondary-green);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(0, 255, 136, 0.3);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--text-primary);
+  border: 2px solid var(--color-primary-green);
+}
+
+.btn-secondary:hover {
+  background: rgba(0, 255, 136, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(0, 255, 136, 0.2);
+}
+
+.btn-secondary:active {
+  transform: translateY(0);
+}
+
+/* Floating Elements */
+.hero-elements {
+  position: relative;
+  height: 100%;
+  min-height: 400px;
+  perspective: 1200px;
+}
+
+.floating-card {
+  position: absolute;
+  background: rgba(13, 13, 13, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-md), 0 0 30px rgba(0, 255, 136, 0.1);
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: all var(--transition-normal);
+}
+
+.floating-card:hover {
+  border-color: var(--color-primary-green);
+  box-shadow: var(--shadow-lg), 0 0 40px rgba(0, 255, 136, 0.2);
+  transform: translateZ(20px) rotateX(5deg) rotateY(5deg);
+}
+
+.card-content {
+  text-align: center;
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.card-content p {
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: var(--font-size-large);
+}
+
+.card-1 {
+  top: 20%;
+  right: 5%;
+  width: 150px;
+}
+
+.card-2 {
+  top: 50%;
+  right: 15%;
+  width: 150px;
+}
+
+.card-3 {
+  bottom: 10%;
+  right: 25%;
+  width: 150px;
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--color-primary-green);
+  z-index: 10;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hero {
+    min-height: auto;
+    padding: 100px var(--spacing-lg) var(--spacing-2xl);
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-elements {
+    min-height: 300px;
+  }
+
+  .floating-card {
+    position: relative !important;
+    margin: var(--spacing-md) 0;
+    animation: none !important;
+  }
+
+  .floating-card:hover {
+    transform: translateY(-4px);
+  }
+
+  .card-1,
+  .card-2,
+  .card-3 {
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+  }
+
+  .scroll-indicator {
+    display: none;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+}
