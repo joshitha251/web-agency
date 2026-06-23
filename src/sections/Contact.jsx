@@ -35,20 +35,20 @@ function Contact() {
   const contactInfo = [
     {
       label: 'Email',
-      value: 'hello@businesswebworks.com',
-      link: 'mailto:hello@businesswebworks.com',
+      value: 'businesswebworks@gmail.com',
+      link: 'mailto:businesswebworks@gmail.com',
       icon: '✉️'
     },
     {
       label: 'Phone',
-      value: '+1 (800) 593-9675',
-      link: 'tel:+18005939675',
+      value: '+91 8639742879',
+      link: 'tel:+8639742879',
       icon: '📞'
     },
     {
       label: 'WhatsApp',
-      value: '+1 (800) 593-9675',
-      link: 'https://wa.me/18005939675',
+      value: '+91 8639742879',
+      link: 'https://wa.me/8639742879',
       icon: '💬'
     }
   ]
@@ -74,8 +74,8 @@ function Contact() {
             '@context': 'https://schema.org',
             '@type': 'ContactPoint',
             contactType: 'Customer Support',
-            telephone: '+1-800-593-9675',
-            email: 'hello@businesswebworks.com'
+            telephone: '+91 8639742879',
+            email: 'businesswebworks@gmail.com'
           })}
         </script>
       </Helmet>
