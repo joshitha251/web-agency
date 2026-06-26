@@ -53,7 +53,7 @@ function WhyChooseUs() {
   ]
 
   const stats = [
-    { number: 150, label: 'Projects Completed', duration: 2.5 },
+    { number: 10, label: 'Projects Completed', duration: 2.5 },
     { number: 100, label: 'Responsive Design', suffix: '%', duration: 2 },
     { number: 100, label: 'Client Focused', suffix: '%', duration: 2 }
   ]

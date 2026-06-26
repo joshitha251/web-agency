@@ -8,7 +8,7 @@ function Portfolio() {
       id: 1,
       title: 'Bean & Brew Cafe',
       description: 'Modern cafe website with online table booking functionality, menu showcase, and customer reviews.',
-      image: '',
+      image: '🧋',
       technologies: ['React', 'Node.js', 'MongoDB'],
       link: 'https://bean-and-brew-ten.vercel.app/',
       metrics: 'Increased reservations by 45%'
@@ -17,7 +17,7 @@ function Portfolio() {
       id: 2,
       title: 'ForgeFit Gym',
       description: 'Premium fitness website focused on membership conversion with class schedules, trainer profiles, and booking system.',
-      image: '',
+      image: '💪🏻',
       technologies: ['React', 'Firebase', 'Stripe'],
       link: 'https://forge-fitness-mauve.vercel.app/',
       metrics: 'Converted 3x more members'
@@ -28,7 +28,7 @@ function Portfolio() {
       description: 'Professional portfolio website showcasing projects, skills, experience, and contact information for creative professionals.',
       image: '🎯',
       technologies: ['React', 'Framer Motion', 'Vercel'],
-      link: '#',
+      link: 'https://freelance-portfolio-alpha-flame.vercel.app/',
       metrics: 'Doubled client inquiries'
     }
   ]

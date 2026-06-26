@@ -39,6 +39,7 @@
   gap: var(--spacing-lg);
   transition: all var(--transition-fast);
   text-align: left;
+  color: #ffffff;
 }
 
 .accordion-header:hover {

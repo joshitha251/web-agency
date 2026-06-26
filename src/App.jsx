@@ -71,8 +71,8 @@ function Footer() {
           </div>
           <div className="footer-section">
             <h4>Contact</h4>
-            <p>Email: <a href="mailto:hello@businesswebworks.com">hello@businesswebworks.com</a></p>
-            <p>Phone: <a href="tel:+18005939675">+1 (800) 593-9675</a></p>
+            <p>Email: <a href="mailto:businesswebworks@gmail.com">businesswebworks@gmail.com</a></p>
+            <p>Phone: <a href="tel:+918639742879">+91 8639742879</a></p>
           </div>
         </div>
         <div className="footer-bottom">

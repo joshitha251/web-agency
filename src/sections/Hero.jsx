@@ -46,8 +46,8 @@ function Hero() {
             </motion.p>
 
             <motion.div variants={itemVariants} className="hero-buttons">
-              <button className="btn btn-primary">View Our Work</button>
-              <button className="btn btn-secondary">Get Free Consultation</button>
+              <a href="#portfolio" className="btn btn-primary">View Our Work</a>
+              <a href="#contact" className="btn btn-secondary">Get Free Consultation</a>
             </motion.div>
           </motion.div>
 
