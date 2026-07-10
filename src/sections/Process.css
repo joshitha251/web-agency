@@ -1,5 +1,5 @@
 .process {
-  background: linear-gradient(180deg, rgba(0, 255, 136, 0.03), transparent);
+  background: linear-gradient(180deg, rgba(139, 92, 246, 0.04), transparent);
   position: relative;
 }
 
@@ -28,7 +28,7 @@
 .process-step:hover {
   border-color: var(--color-primary-green);
   background: rgba(13, 13, 13, 0.8);
-  box-shadow: 0 12px 32px rgba(0, 255, 136, 0.1);
+  box-shadow: 0 12px 32px rgba(139, 92, 246, 0.12);
 }
 
 .step-number {
@@ -47,7 +47,7 @@
   font-weight: 800;
   font-size: 1.5rem;
   position: relative;
-  box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.24);
 }
 
 .step-content h3 {
@@ -87,7 +87,7 @@
   background: var(--color-primary-green);
   position: absolute;
   bottom: -4px;
-  box-shadow: 0 0 12px rgba(0, 255, 136, 0.5);
+  box-shadow: 0 0 12px rgba(139, 92, 246, 0.28);
 }
 
 .process-timeline {

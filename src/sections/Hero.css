@@ -21,7 +21,7 @@
   width: 500px;
   height: 500px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(0, 255, 136, 0.1) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.16) 0%, transparent 70%);
   filter: blur(80px);
 }
 
@@ -89,7 +89,7 @@
 .btn-primary:hover {
   background: var(--color-secondary-green);
   transform: translateY(-2px);
-  box-shadow: 0 12px 24px rgba(0, 255, 136, 0.3);
+  box-shadow: 0 12px 24px rgba(139, 92, 246, 0.28);
 }
 
 .btn-primary:active {
@@ -103,9 +103,9 @@
 }
 
 .btn-secondary:hover {
-  background: rgba(0, 255, 136, 0.1);
+  background: rgba(139, 92, 246, 0.10);
   transform: translateY(-2px);
-  box-shadow: 0 12px 24px rgba(0, 255, 136, 0.2);
+  box-shadow: 0 12px 24px rgba(139, 92, 246, 0.18);
 }
 
 .btn-secondary:active {
@@ -127,7 +127,7 @@
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
   padding: var(--spacing-lg);
-  box-shadow: var(--shadow-md), 0 0 30px rgba(0, 255, 136, 0.1);
+  box-shadow: var(--shadow-md), 0 0 30px rgba(139, 92, 246, 0.08);
   cursor: pointer;
   transform-style: preserve-3d;
   transition: all var(--transition-normal);
@@ -135,7 +135,7 @@
 
 .floating-card:hover {
   border-color: var(--color-primary-green);
-  box-shadow: var(--shadow-lg), 0 0 40px rgba(0, 255, 136, 0.2);
+  box-shadow: var(--shadow-lg), 0 0 40px rgba(139, 92, 246, 0.22);
   transform: translateZ(20px) rotateX(5deg) rotateY(5deg);
 }
 
