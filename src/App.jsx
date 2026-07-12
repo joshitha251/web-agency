@@ -9,9 +9,13 @@ import WhyChooseUs from './sections/WhyChooseUs'
 import FAQ from './sections/FAQ'
 import Contact from './sections/Contact'
 import CursorGlow from './components/CursorGlow'
+import { askGemini } from "./services/gemini";
 import './App.css'
 
+console.log(import.meta.env.VITE_GEMINI_API_KEY);
+
 function App() {
+
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 })
 
   useEffect(() => {
@@ -23,6 +27,14 @@ function App() {
     return () => window.removeEventListener('mousemove', handleMouseMove)
   }, [])
 
+  async function testAI() {
+    const response = await askGemini(
+      "I own a restaurant. Why should I choose Business WebWorks?"
+    );
+
+    console.log(response);
+  }
+
   return (
     <>
       <Helmet>
@@ -32,6 +44,20 @@ function App() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <html lang="en" />
       </Helmet>
+
+<button
+    onClick={testAI}
+    style={{
+      position: "fixed",
+      top: 20,
+      right: 20,
+      zIndex: 9999,
+      padding: "10px 20px",
+      cursor: "pointer"
+    }}
+  >
+    Test AI
+</button>
 
       <CursorGlow position={cursorPosition} />
       <Header />
