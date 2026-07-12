@@ -7,6 +7,7 @@ import Process from './sections/Process'
 import Portfolio from './sections/Portfolio'
 import WhyChooseUs from './sections/WhyChooseUs'
 import FAQ from './sections/FAQ'
+import AIChat from "./components/AIChat";
 import Contact from './sections/Contact'
 import CursorGlow from './components/CursorGlow'
 import { askGemini } from "./services/gemini";
@@ -105,6 +106,7 @@ function Footer() {
           <p>&copy; {currentYear} Business WebWorks. All rights reserved.</p>
         </div>
       </div>
+      <AIChat />
     </footer>
   )
 }
